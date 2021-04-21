@@ -1,0 +1,79 @@
+.skeleton-img {
+    width: 100px;
+    height: 100px;
+    background: #cdcccc;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right, #c5c4c4e1, rgba(161, 161, 161, 0.897), #bebebeef);
+    animation: loading 1.2s infinite linear;
+}
+
+.skeleton-container {
+    margin-right: 20px;
+}
+
+.skeleton-info {
+    width: 100%;
+}
+
+.skeleton-name {
+    width: 80%;
+    height: 30px;
+    background: #cdcccc;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton-name::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right, #c5c4c4e1, rgba(161, 161, 161, 0.897), #bebebeef);
+    animation: loading 1.2s infinite linear;
+}
+
+.skeleton-email {
+    width: 60%;
+    height: 24px;
+    background: #cdcccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton-email::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right, #c5c4c4e1, rgba(161, 161, 161, 0.897), #bebebeef);
+    animation: loading 1.2s infinite linear;
+}
+
+.person {
+    border: 1px solid #cdcccc;
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(0);
+    }
+    50%, 100% {
+        transform: translateX(460px);
+    }
+}

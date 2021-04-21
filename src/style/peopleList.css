@@ -1,0 +1,28 @@
+.person{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #838383;
+    border-radius: 8px;
+}
+
+.people-list{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.title{
+    margin-bottom: 40px;
+}
+
+.container-image img{
+    border-radius: 100%;
+    margin-right: 18px;
+}
+
+.full-name{
+    font-size: 1.4em;
+    margin-bottom: 4px;
+}
